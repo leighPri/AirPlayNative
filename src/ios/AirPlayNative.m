@@ -53,11 +53,12 @@
 	self.myVolumeView = [[MPVolumeView alloc] initWithFrame: mpVolumeViewParentView.bounds];
 
       // set color here later
-      //  [self.myVolumeView setRouteButtonImage:[UIImage imageNamed:@"NAME_OF_AIRPLAY_ASSET"] forState:UIControlStateNormal];
-      //  [self.myVolumeView setRouteButtonImage:[UIImage imageNamed:@"NAME_OF_AIRPLAY_ASSET"] forState:UIControlStateHighlighted];
-      //  [self.myVolumeView setRouteButtonImage:[UIImage imageNamed:@"NAME_OF_AIRPLAY_ASSET"] forState:UIControlStateSelected];
+       [self.myVolumeView setRouteButtonImage:[UIImage imageNamed:@"icon-airplay-white"] forState:UIControlStateNormal];
+       [self.myVolumeView setRouteButtonImage:[UIImage imageNamed:@"icon-airplay-white"] forState:UIControlStateHighlighted];
+       [self.myVolumeView setRouteButtonImage:[UIImage imageNamed:@"icon-airplay-white"] forState:UIControlStateSelected];
 
       [mpVolumeViewParentView addSubview: myVolumeView];
+	    self.myVolumeView.showsVolumeSlider = NO;
       self.myVolumeView.showsRouteButton = NO;
  }
 
