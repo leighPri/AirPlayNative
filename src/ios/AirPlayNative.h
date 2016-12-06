@@ -22,5 +22,6 @@
  - (void)createAirPlayButton:(CDVInvokedUrlCommand *)command;
  - (void)showAirPlayButton:(CDVInvokedUrlCommand *)command;
  - (void)hideAirPlayButton:(CDVInvokedUrlCommand *)command;
+ - (void)airplayButtonPress:(CDVInvokedUrlCommand *)command;
 
  @end

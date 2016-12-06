@@ -12,6 +12,10 @@ module.exports = {
 
   hideAirPlay: function() {
     exec(null, null, "AirPlayNative", "hideAirPlayButton", []);
+  },
+
+  airplayButtonPress: function() {
+    exec(null, null, "AirPlayNative", "airplayButtonPress", []);
   }
 
 };

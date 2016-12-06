@@ -74,4 +74,18 @@
     self.myVolumeView.showsRouteButton = NO;
 }
 
+- (void)airplayButtonPress
+{
+    MPVolumeView *volumeView = [[MPVolumeView alloc] initWithFrame:CGRectZero];
+    [self.view addSubview:volumeView];
+
+    for (UIButton *button in volumeView.subviews)
+    {
+        if ([button isKindOfClass:[UIButton class]])
+        {
+            [button sendActionsForControlEvents:UIControlEventTouchUpInside];
+        }
+    }
+}
+
 @end
