@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="cordova-plugin-airplay"
+        version="1.0.0">
+
+    <name>AirPlay Native/name>
+
+    <description>Show an AirPlay button at your desired location on the view.</description>
+    <keywords>media, stream, airplay, ios</keywords>
+    <license>MIT</license>
+
+    <author>Leigh Prince (github.com/leighPri)</author>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+    <js-module src="www/AirPlayNative.js" name="airplay">
+        <clobbers target="cordova.plugins.airplay" />
+    </js-module>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+    		<feature name="AirPlayNative">
+    			<param name="ios-package" value="AirPlayNative"/>
+    		</feature>
+        </config-file>
+
+    	<header-file src="src/ios/AirPlayNative.h" />
+    	<source-file src="src/ios/AirPlayNative.m" />
+ 		<framework src="MediaPlayer.framework" weak="true" />
+    </platform>
+
+</plugin>
