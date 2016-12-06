@@ -8,12 +8,12 @@
 # import <MediaPlayer/MediaPlayer.h>
 
 @interface AirPlayNative : CDVPlugin <UITabBarDelegate> {
-  NSSTRING* callbackId;
+  NSString* callbackId;
   UIView* mpVolumeViewParentView;
   MPVolumeView* myVolumeView;
 }
 
-@property (nonatomic, copy) NSSTRING* callbackId;
+@property (nonatomic, copy) NSString* callbackId;
 @property (nonatomic, retain) UIView* mpVolumeViewParentView;
 @property (nonatomic, retain) MPVolumeView* myVolumeView;
 @property (nonatomic, readonly, getter=areWirelessRoutesAvailable) BOOL wirelessRoutesAvailable;

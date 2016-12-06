@@ -51,7 +51,7 @@
        [self.webView.superview addSubview:mpVolumeViewParentView];
 
        mpVolumeViewParentView.backgroundColor = [UIColor clearColor];
-       self.myVolumeView = [[MPVolumeView alloc] initWithFrame:mpVolumeViewParentView];
+	self.myVolumeView = [[MPVolumeView alloc] initWithFrame: mpVolumeViewParentView.bounds];
 
       // set color here later
       //  [self.myVolumeView setRouteButtonImage:[UIImage imageNamed:@"NAME_OF_AIRPLAY_ASSET"] forState:UIControlStateNormal];
