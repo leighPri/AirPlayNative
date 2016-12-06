@@ -3,7 +3,7 @@ var exec = require('cordova/exec');
 module.exports = {
 
   createAirPlay: function(originx,originy,width,height) {
-    exec(null,null, "AirPlayNative", "createAirPlayButton", [origin,originy,width,height]);
+    exec(null,null, "AirPlayNative", "createAirPlayButton", [originx,originy,width,height]);
   },
 
   showAirPlay: function() {

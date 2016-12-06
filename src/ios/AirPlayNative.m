@@ -20,7 +20,6 @@
  - (void) createAirPlayButton:(CDVInvokedUrlCommand * )command
  {
        NSArray* arguments = [command arguments];
-       NSString *color - @"default";
 
        self.callbackId = command.callbackId;
        NSUInteger argc = [arguments count];
@@ -59,20 +58,19 @@
       //  [self.myVolumeView setRouteButtonImage:[UIImage imageNamed:@"NAME_OF_AIRPLAY_ASSET"] forState:UIControlStateSelected];
 
       [mpVolumeViewParentView addSubview: myVolumeView];
-      self.myVolumeView.showVolumeSlider = NO;
-      self.myVolumeView.showRouteButton = NO;
+      self.myVolumeView.showsRouteButton = NO;
  }
 
 - (void) showAirPlayButton:(CDVInvokedUrlCommand *)command
 {
-    self.myVolumeViewParentView.hidden = NO;
-    self.myVolumeView.showRouteButton = YES;
+    self.mpVolumeViewParentView.hidden = NO;
+    self.myVolumeView.showsRouteButton = YES;
 }
 
 - (void) hideAirPlayButton:(CDVInvokedUrlCommand *)command
 {
     self.mpVolumeViewParentView.hidden = YES;
-    self.myVolumeView.showRouteButton = NO;
+    self.myVolumeView.showsRouteButton = NO;
 }
 
 @end
