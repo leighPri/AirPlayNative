@@ -9,9 +9,11 @@ A plugin that allows you to easily add a custom AirPlay button to your Cordova i
 ## Methods
 
 airplayInit()
+
       Initializes plugin
       
 airplayButtonPress()
+
       Calls AirPlay action sheet
     
 ## Example
