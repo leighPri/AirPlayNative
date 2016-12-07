@@ -8,7 +8,7 @@
 
 @implementation AirPlayNative
 
-@synthesize mpVolumeViewParentView, myVolumeView, callbackId;
+@synthesize mpVolumeViewParentView, myVolumeView;
 
 #ifndef __IPHONE_3_0
 @synthesize webView;
