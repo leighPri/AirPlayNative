@@ -35,6 +35,3 @@ app.js
 index.html
       
       <button id="airplay-btn">Click here for AirPlay</button>
-      
-      
-(there are better ways to call initialization and to bind to a button's click event, I only wanted to give a pure JavaScript example)
