@@ -1,0 +1,36 @@
+{
+  "name": "cordova-plugin-airplay",
+  "version": "1.0.0",
+  "description": "Show an AirPlay button at your desired location on the view.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leighPri/AirPlayNative"
+  },
+  "bugs": {
+    "url": "https://github.com/leighPri/AirPlayNative/issues"
+  },
+  "scripts": {
+  },
+  "cordova": {
+    "id": "cordova-plugin-airplay",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "keywords": [
+    "media",
+    "stream",
+    "airplay"
+  ],
+  "author": "leighpri",
+  "license": "MIT",
+  "devDependencies": {
+  },
+  "engines": {
+    "cordovaDependencies": {
+      "3.0.0": {
+        "cordova": ">100"
+      }
+    }
+  }
+}
